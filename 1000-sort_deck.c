@@ -78,10 +78,10 @@ void insertion_sort_deck_kind(deck_node_t **deck)
 		tmp = iter->next;
 		insert = iter->prev;
 		while (insert != NULL && insert->card->kind > iter->card->kind)
-OBOBOB		{
-OBOBOB			insert->next = iter->next;
-OBOBOB			if (iter->next != NULL)
-OBOBOB				iter->next->prev = insert;
+		{
+			insert->next = iter->next;
+			if (iter->next != NULL)
+				iter->next->prev = insert;
 			iter->prev = insert->prev;
 			iter->next = insert;
 			if (insert->prev != NULL)
